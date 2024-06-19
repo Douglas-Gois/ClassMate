@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de formulário</title>
+    <style>
+        body {
+            background-color: #3153D4; /* Azul de fundo */
+            color: #FFFFFF;
+            font: normal 18pt Helvetica;
+            text-align: center;
+        }
+        h1 {
+            color: #80AFFF; /* Azul claro do título */
+        }
+        h2 {
+            color: #80AFFF; /* Azul claro do subtítulo */
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 20px;
+            padding: 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: #4285F4; /* Azul do formulário */
+            color: #FFFFFF;
+        }
+        label {
+            color: #FFFFFF; /* Branco */
+        }
+        input, select, button {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input, select {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #D0E0F2; /* Azul claro dos campos de entrada */
+            color: #000000; /* Preto */
+        }
+        button {
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4285F4; /* Azul do botão */
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #80AFFF; /* Azul claro do botão ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <h1>ClassMate</h1>
+    <h2>Sistema de Gerenciamento de Ensino</h2>
+    <form id="meuFormulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" required>
+
+        <label for="data">Data de Nascimento:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="RA">RA:</label>
+        <input type="text" id="RA" name="RA" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade">
+
+        <h3>Selecione seu curso atual</h3>
+        <select name="Curso">
+            <option>Análise e Desenvolvimento de Sistemas</option>
+            <option>Logística</option>
+            <option>Gestão Empresarial</option>
+            <option>Desenvolvimento de Software Multiplataforma</option>
+        </select>
+
+        <h3>Selecione seu semestre</h3>
+        <select name="Semestre">
+            <option>1° Semestre</option>
+            <option>2° Semestre</option>
+            <option>3° Semestre</option>
+            <option>4° Semestre</option>
+            <option>5° Semestre</option>
+            <option>6° Semestre</option>
+        </select>
+
+        <label>
+            <input type="checkbox" id="acordo" name="acordo" value="acordo">
+            Estou de acordo com as políticas de privacidade.
+        </label>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
