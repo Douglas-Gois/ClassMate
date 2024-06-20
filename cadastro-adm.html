@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Administradores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2F4AED; /* Azul escuro da paleta */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+            color: white;
+        }
+
+        .background-text {
+            position: absolute;
+            top: 10%;
+            font-size: 3em;
+            font-weight: bold;
+            color: rgba(120, 208, 235, 0.9); /* Mesma cor que a área do formulário */
+            width: 100%;
+            text-align: center;
+            z-index: -1;
+        }
+
+        .container {
+            background-color: rgba(56, 137, 235, 0.9); /* Azul mais claro com 90% de opacidade */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        input {
+            margin-bottom: 15px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #2F4AED; /* Azul escuro da paleta */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #4924F0; /* Cor roxa da paleta */
+        }
+    </style>
+</head>
+<body>
+    <div class="background-text">ClassMate</div>
+    <div class="container">
+        <h2>Cadastro de Administradores</h2>
+        <form action="/submit-form" method="post">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="employeeId">ID de Funcionário:</label>
+            <input type="text" id="employeeId" name="employeeId" required>
+
+            <label for="tempPassword">Senha Temporária:</label>
+            <input type="password" id="tempPassword" name="tempPassword" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
