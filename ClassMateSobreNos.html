@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - ClassMate</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2F4AED; 
+            color: black;
+            padding-top: 50px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .background-text {
+            position: absolute;
+            top: 10%;
+            font-size: 3em;
+            font-weight: bold;
+            color: rgba(120, 208, 235, 0.9); 
+            width: 100%;
+            text-align: center;
+            z-index: -1;
+        }
+
+        .container {
+            background-color: white; 
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #2F4AED;
+        }
+
+        h3 {
+            color: #2F4AED; 
+        }
+
+        .qr-code {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer {
+            background-color: white; /* Cor combinando com a caixa de texto principal */
+            color: black;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra para consistência */
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background-color: #2F4AED;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <div class="background-text">ClassMate</div>
+    <div id="main-content" class="container">
+        <h1>ClassMate</h1>
+        <h2>Sistema de Gerenciamento de Ensino</h2>
+        <p>Bem-vindo ao ClassMate, seu sistema completo de gerenciamento de ensino. Nossa plataforma foi desenvolvida para facilitar a administração acadêmica, oferecendo ferramentas eficientes e intuitivas para gestores, professores e alunos.</p>
+
+        <h3>Quem Somos</h3>
+        <p>Somos uma equipe dedicada de profissionais com experiência em educação e tecnologia. Nossa missão é transformar a maneira como as instituições de ensino gerenciam suas atividades diárias, promovendo eficiência e qualidade na educação.</p>
+
+        <h3>Valores</h3>
+        <ul>
+            <li>Inovação: Buscamos constantemente inovações que possam melhorar a experiência de nossos usuários.</li>
+            <li>Qualidade: Garantimos a entrega de produtos e serviços de alta qualidade.</li>
+            <li>Compromisso: Estamos comprometidos com o sucesso de nossos clientes e com a educação.</li>
+            <li>Transparência: Valorizamos a transparência em todas as nossas ações e comunicações.</li>
+        </ul>
+
+        <h3>Objetivos</h3>
+        <p>Nossos objetivos são fornecer uma plataforma robusta e segura que facilite a gestão educacional, melhorar a comunicação entre todos os participantes do ambiente escolar, e apoiar a tomada de decisão através de dados precisos e acessíveis.</p>
+
+        <div class="qr-code">
+            <h3>Nosso QR Code</h3>
+            <p>Escaneie o QR Code abaixo para saber mais sobre nós:</p>
+            <img src="QrCodeGit.jpeg" alt="QR Code">
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2024 ClassMate. Todos os direitos reservados.
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
